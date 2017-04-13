@@ -1,0 +1,13 @@
+/* Très petits écrans (smartphones, moins de 768px) */
+
+
+/* Petits écrans (tablettes, 768px et plus) */
+@media (min-width: 768px) {
+
+}
+
+/* Ecrans moyens (desktops, 992px et plus) */
+@media (min-width: 992px) {
+
+
+}
