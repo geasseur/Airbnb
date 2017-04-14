@@ -5,7 +5,7 @@ main{
 
 header{
   height: 400px;
-  position: relative;
+  position: flex;
 }
 
 header img, footer section img{
@@ -21,6 +21,8 @@ header h1{
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 25px;
+  position: flex;
+  top:70px;
 }
 
 header span{
@@ -32,15 +34,17 @@ header span{
   display: none;
 }
 
-.formMobile img, .formMobile ul, .formMobile ul li{
-  display: inline-block;
-  border: 1px solid black;
+.formMobile{
+  width: 100%;
+  position: flex;
+  bottom:120px;
+  left:10px;
+
 }
 
-.formMobile img{
-  position: absolute;
-  bottom:5px;
-  left: 5px;
+.formMobile ul, .formMobile ul li{
+  display: inline-flex;
+  border: 1px solid black;
 }
 
 li{
@@ -48,28 +52,26 @@ li{
 }
 
 .formMobile ul{
-  width: 75%;
-  position: absolute;
-  left: 0px;
-  bottom: 5px;
+  width: 96%;
+  height: 20px;
+  position: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 0;
 }
 
 .formMobile ul li{
-  width: 30%;
-  margin:0;
+  position: flex;
+  flex-flow: row nowrap;
+  width: 20%;
+  height: 20px;
   font-size: 1.2em;
-
-}
-
-.formMobile{
-  width: 100%;
-  position: relative;
-  height: 50px;
+  text-align: center;
 }
 
 
 .navNavigation{
-  position: absolute;
+  position: flex;
   bottom:20px;
   list-style-type: none;
   border-bottom:1px solid black;
@@ -80,8 +82,15 @@ header nav ul li a{
   text-decoration: none;
 }
 
+.navNavigation ul{
+  border: 1px solid black;
+  padding: 0;
+}
+
 .navNavigation ul li{
-  width: 25%;
+  border: 1px solid black;
+  width: 20%;
+  margin: 10px auto;
   display: inline-block;
   font-size: 16px;
   color:grey;
