@@ -13,7 +13,23 @@ header img, footer section img{
 }
 
 header h1{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+}
 
+header span{
+  color:red;
+  font-weight: bold;
+}
+
+header form input{
+  width: 30%;
+  display: inline-block;
+}
+
+header form label{
+  display: none;
 }
 
 /* Petits écrans (tablettes, 768px et plus) */
