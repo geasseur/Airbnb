@@ -1,6 +1,11 @@
 /* Très petits écrans (smartphones, moins de 768px) */
-*{
+main{
   border:0.5px solid black;
+}
+
+header{
+  height: 400px;
+  position: relative;
 }
 
 header img, footer section img{
@@ -23,18 +28,75 @@ header span{
   font-weight: bold;
 }
 
-header form input{
-  width: 30%;
-  display: inline-block;
+.recherche{
+  display: none;
 }
 
-header form label{
+.formMobile img, .formMobile ul, .formMobile ul li{
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.formMobile img{
+  position: absolute;
+  bottom:5px;
+  left: 5px;
+}
+
+li{
+  text-align: center;
+}
+
+.formMobile ul{
+  width: 75%;
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+}
+
+.formMobile ul li{
+  width: 30%;
+  margin:0;
+  font-size: 1.2em;
+
+}
+
+.formMobile{
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+
+
+.navNavigation{
+  position: absolute;
+  bottom:20px;
+  list-style-type: none;
+  border-bottom:1px solid black;
+  width: 100%;
+}
+
+header nav ul li a{
+  text-decoration: none;
+}
+
+.navNavigation ul li{
+  width: 25%;
+  display: inline-block;
+  font-size: 16px;
+  color:grey;
+}
+
+.reservation #reserve3,#reserve4,#reserve5 {
   display: none;
 }
 
 /* Petits écrans (tablettes, 768px et plus) */
 @media (min-width: 768px) {
-
+  form input{
+    width: 30%;
+    display: inline-block;
+  }
 }
 
 /* Ecrans moyens (desktops, 992px et plus) */
