@@ -109,29 +109,100 @@ header span{
 
 /********FIN HEADER*************/
 
-.reservation img, .experience img{
-  width: 40%;
-  height: 50%;
-  display: inline-block;
+
+/*********Debut MAIN*************/
+main{
+  font-family: sans-serif;
 }
 
-.reservation img{
+h1, h2, h3{
+  margin-left:20px;
+}
+
+li{
+  list-style: none;
+}
+
+main section{
+  margin-bottom: 50px;
+}
+
+#reserve3, #reserve4, #reserve5, #experience3, #experience4,
+#experience5, #logement3, #destination4, #destination5{
+  display: none;
+}
+
+.reservation ul{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
+  margin:0;
+  padding: 0;
 }
 
-.DestinationUne img{
-  width: 30%;
-  height: 50%;
-  display: inline-block;
+#reserve1{
+  margin-left: 20px;
+}
+
+.reservation ul li, .experience ul li{
+  margin:0;
+  padding: 0;
+}
+
+.reservation img, .experience img{
+  width: 90%;
+  height: 90%;
+}
+
+
+.experience ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin:0;
+  padding: 0;
+}
+
+#experience1{
+  margin-left: 20px;
+}
+
+.logement ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin:0;
+  padding: 0;
 }
 
 .logement img{
-  width: 40%;
-  height: 50%:
+  width: 90%;
+  height: 90%:
+}
+
+#logement1{
+  margin-left: 10px;
+}
+
+.DestinationUne ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin:0;
+  padding: 0;
+}
+
+.DestinationUne img{
+  width: 90%;
+  height: 90%;
 }
 
 .estimationRevenu img{
@@ -139,13 +210,15 @@ header span{
   height: 30%;
 }
 
-.reservation #reserve3,#reserve4,#reserve5 {
-  display: none;
-}
 
-.reservation #reserve1, #reserve2{
+/**********FIN Main*************/
 
-}
+
+/************FOOTER**************/
+
+
+/************FIN FOOTER**********/
+
 
 /* Petits écrans (tablettes, 768px et plus) */
 @media (min-width: 768px) {
