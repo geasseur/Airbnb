@@ -3,13 +3,15 @@ main{
   border:3px solid black;
 }
 
+/***************Header************/
+
 header{
+  position: relative;
   height: 400px;
-  position: flex;
   border:3px solid black;
 }
 
-header nav ul li a{
+a{
   text-decoration: none;
 }
 
@@ -26,7 +28,7 @@ header h1{
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 25px;
-  position: flex;
+  position: absolute;
   top:70px;
 }
 
@@ -39,18 +41,19 @@ header span{
   display: none;
 }
 
+
+
 .formMobile{
   width: 100%;
-  position: flex;
+  display: flex;
   bottom:120px;
-  left:10px;
   height: 80px;
   list-style-type: none;
   background-color: yellow;
 }
 
 .formMobile ul, .formMobile ul li{
-  display: inline-flex;
+  display: flex;
   border: 1px solid black;
 }
 
@@ -58,7 +61,7 @@ header span{
   text-align: center;
   margin: auto;
   font-family: sans-serif;
-    font-size: 1.5em;
+  font-size: 1.5em;
 
 }
 
@@ -66,61 +69,95 @@ header span{
   width: 96%;
   height: 50px;
   margin: 0 auto 0 auto;
-  position: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
+  display: flex;
   padding: 0;
 }
 
 .formMobile ul li{
-  position: flex;
-  flex-flow: row nowrap;
+  display: flex;
   width: 30%;
   height: 40px;
   margin: auto;
 }
 
-
 .navNavigation{
-  display: flex;
-  background-color: red;
+  position: absolute;
+  bottom:30px;
   width: 100%;
-  margin:0 20px 0 0;
-  height: 100px;
-}
-
-
-
-.navNavigation ul{
-  background-color: blue;
-  display: flex;
-  list-style-type: none;
   height: 50px;
-  width: 90%;
-  padding:0;
+  bottom: 30px;
 }
 
-.navNavigation ul li{
-  display: inline-flex;
-  background-color: yellow;
-  width: 90%;
+.navNavigation div{
+  bottom:30px;
+  display: flex;
+  width: 100%;
   height: 50px;
   justify-content: space-around;
-  align-content: space-around;
+  align-items: space-around;
   flex-flow: row nowrap;
+  border-bottom: 2px solid black;
+  margin:auto 0 auto 0;
 }
 
-.navNavigation ul li a{
+.navNavigation a{
   margin:auto;
   text-align: center;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
+/********FIN HEADER*************/
+
+.reservation img, .experience img{
+  width: 40%;
+  height: 50%;
+  display: inline-block;
+}
+
+.reservation img{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.DestinationUne img{
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+}
+
+.logement img{
+  width: 40%;
+  height: 50%:
+}
+
+.estimationRevenu img{
+  width: 100%;
+  height: 30%;
 }
 
 .reservation #reserve3,#reserve4,#reserve5 {
   display: none;
 }
 
+.reservation #reserve1, #reserve2{
+
+}
+
 /* Petits écrans (tablettes, 768px et plus) */
 @media (min-width: 768px) {
+
+  .formMobile{
+    display: none;
+  }
+
+  .recherche{
+
+  }
+
   form input{
     width: 30%;
     display: inline-block;
