@@ -323,6 +323,7 @@ header h1{
   }
 
   .tablette{
+    display: block;
     height: 50%;
     width: 50%;
   }
@@ -333,8 +334,40 @@ header h1{
 
   #reserve3, #reserve4, #experience3, #experience4
   , #destination4{
-    display: run-in;
+    display: block;
   }
+
+/*************FIN MAIN********************/
+
+/**************FOOTER********************/
+
+.lienAirbnb, .listDecouverte, .hebergement{
+  display: inline-block;
+}
+
+footer form{
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  padding-bottom: 0;
+  bottom:30px;
+}
+
+footer form select{
+  display: block;
+}
+
+footer form select{
+  width: 100px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.condition div{
+  display: inline-block;
+}
+
+/**************FIN FOOTER**************/
 
 }
 
