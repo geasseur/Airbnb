@@ -107,6 +107,7 @@ header span{
   align-self: center;
   font-size: 1.1em;
   font-family: sans-serif;
+  color:black;
 }
 
 /*********Fin navNavigation************/
@@ -223,13 +224,76 @@ main section{
   height: 30%;
 }
 
+.estimationRevenu p{
+  margin-left: 5%;
+}
+
+.estimationRevenu a button{
+  height: 40px;
+  width: 200px;
+  background-color: rgb(0, 162, 128);
+  border-radius: 5px;
+  color:white;
+  font-size: 1em;
+  margin-left: 5%;
+}
+
 /**********FIN Main*************/
 
 
 /************FOOTER**************/
 
+footer form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+footer form select{
+  width: 40%;
+  height: 60px;
+  border: 1px solid black;
+}
+
 .lienAirbnb, .listDecouverte, .hebergement{
   display: none;
+}
+
+.condition{
+  border-top: 1px solid grey;
+  padding-top:10px;
+  color: grey;
+}
+
+.condition div img, .condition div p, .condition div ul, .condition div ul li{
+  display: inline-block;
+  position: relative;
+}
+
+.condition div p{
+  margin: 0 0 0 0;
+}
+
+.condition div ul li a{
+  font-size: 0.9em;
+  color: grey;
+}
+
+.condition div ul li{
+  margin: 0 1% 0 1%;
+}
+
+.condition div ul{
+  padding-left: 0;
+  width: 65%;
+}
+
+.condition img{
+  width: 20px;
+  height: 20px;
 }
 
 /************FIN FOOTER**********/
@@ -238,18 +302,40 @@ main section{
 /* Petits écrans (tablettes, 768px et plus) */
 @media (min-width: 768px) {
 
-  /*.formMobile{
+
+/**********************HEADER*************/
+header{
+  height: 500px;
+}
+
+header h1{
+    font-size:3em;
+  }
+
+
+/***************FIN HEADER***************/
+
+
+/*****************MAIN***************/
+
+  .mobile{
     display: none;
   }
-*/
+
+  .tablette{
+    height: 50%;
+    width: 50%;
+  }
+
   .recherche{
 
   }
 
-  form input{
-    width: 30%;
-    display: inline-block;
+  #reserve3, #reserve4, #experience3, #experience4
+  , #destination4{
+    display: run-in;
   }
+
 }
 
 /* Ecrans moyens (desktops, 992px et plus) */
