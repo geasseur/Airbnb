@@ -44,31 +44,31 @@ header span{
 
 
 .formMobile{
-  width: 100%;
   display: flex;
   bottom:120px;
-  height: 80px;
-  list-style-type: none;
-  background-color: yellow;
+  height: 60px;
+  width: 90%;
+  margin-left:5%;
+  align-items: center;
+  position: absolute;
+  border: 1px solid black;
+  list-style-type: circle;
 }
 
 .formMobile ul, .formMobile ul li{
   display: flex;
-  border: 1px solid black;
 }
 
 .formMobile ul li p{
   text-align: center;
-  margin: auto;
   font-family: sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
 
 }
 
 .formMobile ul{
-  width: 96%;
+  width: 70%;
   height: 50px;
-  margin: 0 auto 0 auto;
   display: flex;
   padding: 0;
 }
@@ -77,7 +77,6 @@ header span{
   display: flex;
   width: 30%;
   height: 40px;
-  margin: auto;
 }
 
 .navNavigation{
@@ -120,7 +119,7 @@ h1, h2, h3{
 }
 
 li{
-  list-style: none;
+  list-style-type: circle;
 }
 
 main section{
@@ -210,12 +209,14 @@ main section{
   height: 30%;
 }
 
-
 /**********FIN Main*************/
 
 
 /************FOOTER**************/
 
+.lienAirbnb, .listDecouverte, .hebergement{
+  display: none;
+}
 
 /************FIN FOOTER**********/
 
@@ -223,10 +224,10 @@ main section{
 /* Petits écrans (tablettes, 768px et plus) */
 @media (min-width: 768px) {
 
-  .formMobile{
+  /*.formMobile{
     display: none;
   }
-
+*/
   .recherche{
 
   }

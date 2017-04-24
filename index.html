@@ -54,6 +54,7 @@
 
       <!--div pour mobile-->
       <div class="formMobile">
+        <img src="images/mobile/loupe.png" alt="recherche">
         <ul>
           <li>
             <p>
@@ -345,19 +346,26 @@
     <footer>
 
       <!--sélection de la langue/pays-->
-      <article>
-        <select class="langue" name="langue">
-
+      <form class="LanguePays" action="index.html" method="post">
+        <select class="langue" name="langue" value="Français">
+          <option value="Français" selected="Français">Français</option>
+          <option value="Anglais">Anglais</option>
+          <option value="Allemand">Allemand</option>
+          <option value="Espagnol">Espagnol</option>
         </select>
 
-        <select class="pays">
-
+        <select class="pays" name="pays">
+          <option value="EU" selected="EU">Union Européenne</option>
+          <option value="Amerique">Amérique</option>
+          <option value="Asie">Asie</option>
+          <option value="Afrique">Afrique</option>
+          <option value="Oceanie">Oceanie</option>
         </select>
-      </article>
+      </form>
       <!--Fin sélection de la langue/pays-->
 
       <!--Liste de lien airbnb-->
-      <article>
+      <article class="lienAirbnb">
         <h4>Airbnb</h4>
         <ul>
           <li>
@@ -388,7 +396,7 @@
       <!--fin list airbnb-->
 
       <!--list decouvrir-->
-      <article>
+      <article class="listDecouverte">
         <h4>Découvrir</h4>
         <ul>
           <li>
@@ -415,35 +423,31 @@
       <!-- fin liste découvrir-->
 
 
-      <!--list decouvrir-->
-      <article>
-        <h4>Découvrir</h4>
+      <!--list hebergement-->
+      <article class="hebergement">
+        <h4>Hebergement</h4>
         <ul>
           <li>
-            <a href="">Confiance et sécurité</a>
+            <a href="">Pourquoi être hote</a>
           </li>
 
           <li>
-            <a href="">Crédit voyage</a>
+            <a href="">Hospitalite</a>
           </li>
 
           <li>
-            <a href="">Airbnb Citizen</a>
+            <a href="">Hebergement</a>
           </li>
 
           <li>
-            <a href="">Voyages d'affaire</a>
-          </li>
-
-          <li>
-            <a href="">Guides</a>
+            <a href="">Responsable</a>
           </li>
         </ul>
       </article>
-      <!-- fin liste découvrir-->
+      <!-- fin liste hebergement-->
 
       <!--Section tout en bas du bas de page-->
-      <section>
+      <section class="condition">
         <img src="images/Logo.png" alt="logo site" />
         <p>
           © Airbnb, Inc.
