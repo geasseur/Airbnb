@@ -41,7 +41,7 @@ header span{
   display: none;
 }
 
-
+/**********DEBUT FORMMOBILE*********/
 
 .formMobile{
   display: flex;
@@ -79,6 +79,11 @@ header span{
   height: 40px;
 }
 
+/*********Fin formMobile************/
+
+
+/*********navNavigation************/
+
 .navNavigation{
   position: absolute;
   bottom:30px;
@@ -92,7 +97,7 @@ header span{
   display: flex;
   width: 100%;
   height: 50px;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: space-around;
   flex-flow: row nowrap;
   border-bottom: 2px solid black;
@@ -100,11 +105,14 @@ header span{
 }
 
 .navNavigation a{
-  margin:auto;
+  margin: 0 1.5% 0 1.5%;
   text-align: center;
+  align-self: center;
   font-size: 1.1em;
   font-family: sans-serif;
 }
+
+/*********Fin navNavigation************/
 
 /********FIN HEADER*************/
 
@@ -116,10 +124,6 @@ main{
 
 h1, h2, h3{
   margin-left:20px;
-}
-
-li{
-  list-style-type: circle;
 }
 
 main section{
