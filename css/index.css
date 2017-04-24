@@ -1,14 +1,10 @@
 /* Très petits écrans (smartphones, moins de 768px) */
-main{
-  border:3px solid black;
-}
 
 /***************Header************/
 
 header{
   position: relative;
   height: 400px;
-  border:3px solid black;
 }
 
 a{
@@ -51,8 +47,9 @@ header span{
   margin-left:5%;
   align-items: center;
   position: absolute;
-  border: 1px solid black;
   list-style-type: circle;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px 0.1px grey;
 }
 
 .formMobile ul, .formMobile ul li{
@@ -67,7 +64,7 @@ header span{
 }
 
 .formMobile ul{
-  width: 70%;
+  width: 80%;
   height: 50px;
   display: flex;
   padding: 0;
@@ -118,8 +115,21 @@ header span{
 
 
 /*********Debut MAIN*************/
+
+.tablette, .ordinateur{
+  display: none;
+}
+
 main{
   font-family: sans-serif;
+}
+
+main p{
+  font-weight: lighter;
+}
+
+main li{
+  list-style-type: none;
 }
 
 h1, h2, h3{
