@@ -334,10 +334,6 @@ header h1{
     width: 50%;
   }
 
-  .recherche{
-
-  }
-
   #reserve3, #reserve4, #experience3, #experience4
   , #destination4{
     display: block;
@@ -380,6 +376,11 @@ footer form select{
 
 .condition div{
   display: inline-block;
+  position: relative;
+}
+
+.ConditionUtilisation{
+  left:50%;
 }
 
 /**************FIN FOOTER**************/
@@ -451,6 +452,10 @@ footer form select{
 
   .lienAirbnb, .listDecouverte, .hebergement{
     margin:0 5.5% 0 5.5%;
+  }
+
+  .ConditionUtilisation{
+    left:60%;
   }
 
   /************FIN FOOTER************/
