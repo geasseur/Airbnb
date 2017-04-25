@@ -233,8 +233,10 @@ main section{
   margin-left: 5%;
 }
 
-.estimationRevenu a button{
-  height: 40px;
+.estimationRevenu a{
+  text-align:center;
+  display: block;
+  padding: 10px 0 10px 0;
   width: 200px;
   background-color: rgb(0, 162, 128);
   border:0;
